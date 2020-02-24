@@ -2,7 +2,7 @@
 This project used the Python [NumPy](https://www.numpy.org/) and [NetworkX](https://networkx.github.io/) libraries to demonstrathe the mathematical operations behind the PageRank network analysis algorithm which was used to create Google's search engine. The algorithm can be intuitvely understood as using the probabilities of using any link on a webpage to go to other webpages as a means of evaluating a webpage's overall importance in the world wide web. In this project, a very simple toy network is used to test the custom functions and to compare their results in compariong to the equivalent NetworkX functions.
 
 ## Toy Network
-Below is the list of edges (in the form of tuples) which represent a directional connection from the node specified on the left side of the tuple toward the node specified on the right side of the tuple. A visualization of this toy network can be found in the Jupyter Notebook.
+Below is the list of edges (in the form of tuples) which represent a directional connection from the node specified on the left side of the tuple toward the node specified on the right side of the tuple. A visualization of this toy network can be found in the [Jupyter Notebook](https://github.com/Yoseph-Zuskin/PageRank_Algorithm/blob/master/Social_Network_Analysis_Assignment.ipynb).
 
 ```
 [('9','7'),('8','7'),('8','6'),('8','5'),('7','6'),('7','5'),('6','5'),('6','4'),('5','4'),('4','3'),('4','1'),('8','7'),('3','2'),('3','1'),('2','1')]
@@ -101,7 +101,7 @@ Using the tranisiton matrix (M) and initial vector (I), we can adjust the rank s
 ```
 M**n*I
 ```
-Where n is the number of times the transition matrix needs to be multipled by itself in order to achieve convergence. In the custom function created in the Jupyter Notebook, the verbose parameter provided the option to show how many iterations is required until the resulting pageranks and not any different then they are will one less iteration. In this toy network example, the convergence will occur at the 60th iteration when using a dampening factor of 0.85, with the following ranks for each webpage rank:
+Where n is the number of times the transition matrix needs to be multipled by itself in order to achieve convergence. In the custom function created in the [Jupyter Notebook](https://github.com/Yoseph-Zuskin/PageRank_Algorithm/blob/master/Social_Network_Analysis_Assignment.ipynb), the verbose parameter provided the option to show how many iterations is required until the resulting pageranks and not any different then they are will one less iteration. In this toy network example, the convergence will occur at the 60th iteration when using a dampening factor of 0.85, with the following ranks for each webpage rank:
 ```
 {'1': 0.2160493827160494,
  '2': 0.07438271604938271,
